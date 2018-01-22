@@ -18,9 +18,7 @@
 $(call inherit-product, vendor/xiaomi/scorpio/scorpio-vendor.mk)
 
 # Local overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -34,10 +32,6 @@ PRODUCT_COPY_FILES += \
 # Consumer IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service.xiaomi_8996
-
-# ConfigPanel
-PRODUCT_PACKAGES += \
-    ConfigPanel
 
 # Device init scripts
 PRODUCT_PACKAGES += \

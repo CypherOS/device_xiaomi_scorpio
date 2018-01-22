@@ -119,4 +119,7 @@
 
     <!-- Period of time in which to consider light samples in milliseconds. -->
     <integer name="config_autoBrightnessAmbientLightHorizon">10000</integer>
+
+    <!-- BurnIn protection. This should be enabled on devices that have OLED displays -->
+    <bool name="config_enableBurnInProtection">true</bool>
 </resources>
